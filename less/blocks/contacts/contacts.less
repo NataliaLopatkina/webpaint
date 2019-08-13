@@ -1,0 +1,43 @@
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 482px;
+    margin: 0 auto;
+    margin-bottom: 29px;
+
+    &__text-address {
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.2px;
+        color: #bebebe;
+        margin-left: 2px;
+    }
+
+    &__address-img {
+        width: 8px;
+        height: 12px;
+    }
+
+    &__phone-link {
+        font-size: 14px;
+        font-weight: 400;
+        color: #bebebe;
+        margin-left: 2px;
+    }
+
+    &__phone-img {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+@media (max-width: @mobile-width) {
+    .contacts {
+        flex-direction: column;
+
+        &__address {
+            margin-bottom: 10px;
+        }
+    }
+}

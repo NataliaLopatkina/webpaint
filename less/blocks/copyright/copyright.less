@@ -1,0 +1,33 @@
+.copyright {
+    background: #2c2c2c;
+
+    &__content {
+        width: @tablet-width;
+        margin: 0 auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    &__text {
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.3px;
+    }
+}
+
+@media (max-width: @tablet-width) {
+    .copyright {
+        &__content {
+            .tablet;
+        }
+    }
+}
+
+@media (max-width: @mobile-width) {
+    .copyright {
+        &__content {
+            width: 300px;
+        }
+    }
+}

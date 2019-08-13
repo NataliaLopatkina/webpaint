@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Webpaint</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__content">
+            <div class="header__actions">
+                <div class="logo">
+                    <svg class="logo__img">
+                        <use xlink:href="img/svg-sprite/svg-sprite.svg#logo"></use>
+                    </svg>
+                    <span class="logo__text">ebpaint</span>
+                </div>
+                <button type="button" class="button-menu button-menu--open">
+                    <span class="button-menu__line"></span>
+                </button>
+            </div>
+            <nav class="nav nav--closed">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="" class="nav__text nav__text--is-active">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href class="nav__text">Portfolio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href class="nav__text">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href class="nav__text">Blog</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href class="nav__text">Contact</a>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="banner">
+            <div class="banner__content">
+                <h1 class="banner__title">We are <span class="banner__title-logo">Webpaint</span></h1>
+                <p class="banner__text"><span class="banner__text-italic">digital & branding</span> agency based in
+                    Jupiter and we would love to turn ideas into
+                    beautiful things.</p>
+                <a href="" class="button-red button-red--banner">See portfolio</a>
+            </div>
+        </div>
+
+        <section class="services">
+            <div class="services__content">
+                <h2 class="visually-hidden">Services</h2>
+                <ul class="services__list">
+                    <li class="services__item">
+                        <div class="services__content-img">
+                            <svg class="services__img">
+                                <use xlink:href="img/svg-sprite/svg-sprite.svg#android"></use>
+                            </svg>
+                        </div>
+                        <div class="services__content-text">
+                            <p class="services__title">Consectetur</p>
+                            <p class="services__text">Vestibulum id ligula porta euismod semper. Aenean lacinia
+                                bibendum nulla
+                                sed consectetur dui.</p>
+                        </div>
+                    </li>
+                    <li class="services__item">
+                        <div class="services__content-img">
+                            <svg class="services__img">
+                                <use xlink:href="img/svg-sprite/svg-sprite.svg#computer"></use>
+                            </svg>
+                        </div>
+                        <div class="services__content-text">
+                            <p class="services__title">Tristiquet</p>
+                            <p class="services__text">Fusce dapibus, cursus commodo, tortor mauris condimentum nibh, ut
+                                fermentum massa justo risus.</p>
+                        </div>
+                    </li>
+                    <li class="services__item">
+                        <div class="services__content-img">
+                            <svg class="services__img">
+                                <use xlink:href="img/svg-sprite/svg-sprite.svg#camera"></use>
+                            </svg>
+                        </div>
+                        <div class="services__content-text">
+                            <p class="services__title">Fermentum</p>
+                            <p class="services__text">Aenean eu leo quam. Pellentesque ornare sem lacinia quam
+                                venenatis
+                                vestibulum sagittis lacus mollis.</p>
+                        </div>
+                    </li>
+                    <li class="services__item">
+                        <div class="services__content-img">
+                            <svg class="services__img">
+                                <use xlink:href="img/svg-sprite/svg-sprite.svg#watch"></use>
+                            </svg>
+                        </div>
+                        <div class="services__content-text">
+                            <p class="services__title">Elit Ultricies</p>
+                            <p class="services__text">Maecenas sed diam eget risus varius blandit sit amet non magna.
+                                Vivamus
+                                sagittis lacus vel augue laoreet.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="portfolio">
+            <div class="portfolio__content">
+                <h2 class="title title--portfolio">Our Featured Works</h2>
+                <p class="text text--portfolio">Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum.</p>
+                <div class="portfolio-filter">
+                    <div class="portfolio-filter__buttons">
+                        <ul class="portfolio-filter__buttons-list">
+                            <li class="portfolio-filter__buttons-item">
+                                <button data-button="all" class="button-filter button-all button-red button-red--portfolio button-red--is-active">All</button>
+                            </li>
+                            <li class="portfolio-filter__buttons-item">
+                                <button data-button="graphic" class="button-filter button-red button-red--portfolio">Graphic</button>
+                            </li>
+                            <li class="portfolio-filter__buttons-item">
+                                <button data-button="illustration" class="button-filter button-red button-red--portfolio">Illustration</button>
+                            </li>
+                            <li class="portfolio-filter__buttons-item">
+                                <button data-button="motion" class="button-filter button-red button-red--portfolio">Motion</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="portfolio-filter__content">
+                        <ul class="portfolio-filter__content-list">
+                            <li data-filter="graphic" class="portfolio-filter__content-item">
+                                <img class="portfolio-filter__content-img" src="img/products/1.jpg" alt="Product" />
+                            </li>
+                            <li data-filter="motion" class="portfolio-filter__content-item">
+                                <img class="portfolio-filter__content-img" src="img/products/2.jpg" alt="Product" />
+                            </li>
+                            <li data-filter="illustration" class="portfolio-filter__content-item">
+                                <img class="portfolio-filter__content-img" src="img/products/3.jpg" alt="Product" />
+                            </li>
+                            <li data-filter="graphic" class="portfolio-filter__content-item">
+                                <img class="portfolio-filter__content-img" src="img/products/4.jpg" alt="Product" />
+                            </li>
+                            <li data-filter="illustration" class="portfolio-filter__content-item">
+                                <img class="portfolio-filter__content-img" src="img/products/5.jpg" alt="Product" />
+                            </li>
+                            <li data-filter="motion" class="portfolio-filter__content-item">
+                                <img class="portfolio-filter__content-img" src="img/products/6.jpg" alt="Product" />
+                            </li>
+                            <li data-filter="motion" class="portfolio-filter__content-item">
+                                <img class="portfolio-filter__content-img" src="img/products/7.jpg" alt="Product" />
+                            </li>
+                            <li data-filter="illustration" class="portfolio-filter__content-item">
+                                <img class="portfolio-filter__content-img" src="img/products/8.jpg" alt="Product" />
+                            </li>
+                            <li data-filter="graphic" class="portfolio-filter__content-item">
+                                <img class="portfolio-filter__content-img" src="img/products/9.jpg" alt="Product" />
+                            </li>
+                            <li data-filter="motion" class="portfolio-filter__content-item">
+                                <img class="portfolio-filter__content-img" src="img/products/10.jpg" alt="Product" />
+                            </li>
+                            <li data-filter="graphic" class="portfolio-filter__content-item">
+                                <img class="portfolio-filter__content-img" src="img/products/11.jpg" alt="Product" />
+                            </li>
+                            <li data-filter="illustration" class="portfolio-filter__content-item portfolio-filter__content-item--active">
+                                <img class="portfolio-filter__content-img" src="img/products/12.jpg" alt="Product" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <h3 class="title title--footer">Get in Touch</h3>
+            <p class="text text--footer">Vestibulum id ligula porta felis euismod semper,malesuada euismod.</p>
+            <div class="contacts">
+                <div class="contacts__address">
+                    <svg class="contacts__address-img">
+                        <use xlink:href="img/svg-sprite/svg-sprite.svg#location"></use>
+                    </svg>
+                    <span class="contacts__text-address">Moonshine Street No: 14/05 Light City, Jupiter</span>
+                </div>
+                <div class="contacts__phone">
+                    <svg class="contacts__phone-img">
+                        <use xlink:href="img/svg-sprite/svg-sprite.svg#phone"></use>
+                    </svg>
+                    <a href="tel:02475416587" class="contacts__phone-link">0247 541 65 87</a>
+                </div>
+            </div>
+            <div class="social-links">
+                <ul class="social-links__list">
+                    <li class="social-links__item social-links__item--rss">
+                        <a href="" class="social-links__link">
+                            <svg class="social-links__img">
+                                <use xlink:href="img/svg-sprite/svg-sprite.svg#rss"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-links__item social-links__item--facebook">
+                        <a href="" class="social-links__link">
+                            <svg class="social-links__img social-links__img--facebook">
+                                <use xlink:href="img/svg-sprite/svg-sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-links__item social-links__item--twitter">
+                        <a href="" class="social-links__link">
+                            <svg class="social-links__img">
+                                <use xlink:href="img/svg-sprite/svg-sprite.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-links__item social-links__item--dribbble">
+                        <a href="" class="social-links__link">
+                            <svg class="social-links__img social-links__img--dribbble">
+                                <use xlink:href="img/svg-sprite/svg-sprite.svg#dribbble"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-links__item social-links__item--pinterest">
+                        <a href="" class="social-links__link">
+                            <svg class="social-links__img">
+                                <use xlink:href="img/svg-sprite/svg-sprite.svg#pinterest"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div class="copyright__content">
+                <span class="copyright__text">@ 2013 Webpaint. All Rights Reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

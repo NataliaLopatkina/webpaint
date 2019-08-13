@@ -1,0 +1,25 @@
+.portfolio {
+    &__content {
+        width: @tablet-width;
+        margin: 0 auto;
+        padding-top: 54px;
+        padding-bottom: 70px;
+        text-align: center;
+    }
+}
+
+@media (max-width: @tablet-width) {
+    .portfolio {
+        &__content {
+            .tablet;
+        }
+    }
+}
+
+@media (max-width: @mobile-width) {
+    .portfolio {
+        &__content {
+            width: 300px;
+        }
+    }
+}
